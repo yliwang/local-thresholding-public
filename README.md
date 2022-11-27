@@ -1,1 +1,5 @@
-# local-thresholding-public
+global thresholding is effective for images with obvious two-peak histograms. however, for images with nonuniform illumination, these kind of methods tend to give non-satisfactory results. As such, local or even adaptive thresholding methods are imployed in such cases. 
+In this project, one is given the sample image, nonuniform_illumination.bmp, which is presented in the lecturing ppt for demonstrating adaptive thresholding, the image is divided into 4x4 sub-blocks, each sub-block takes the same size (125x100, as the sample image is 500x400 in dimension). compute variance for each sub-block, and for sub-blocks with variance larger than 100, a threshold is calculated separatively, while for the remaining sub-blocks, they are taken as a whole, and only one threshold is calculated. 
+The threshold should be calculated by the iterative threshold determination method (two-means thresholding method).
+A proto-type python script is provided, with some function prototypes are defined. 
+Both the implemented py files, and the resulting binarized image should be submitted for this project. The resulting binarized image should be named as bin_nonuniform_illumination.bmp
